@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     mumbai: {
       url: process.env.MUMBAI_TESNET_URL,
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: [process.env.PRIVATE_KEY.toString()],
       timeout: 0,
       gas: "auto",
       gasPrice: "auto",
